@@ -1,0 +1,193 @@
+/* ========== VARIABLES ========== */
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --overlays-shadows-headings-color: #2e2f42;
+  --success-color: #31d0aa;
+  --body-text-color: #434455;
+  --subtitle-text-color: #8e8f99;
+  --first-accent-color: #e7e9fc;
+  --light-mode-backgrounds-color: #f4f4fd;
+  --first-background-color: #ffffff;
+  --modal-background-color: #fcfcfc;
+}
+/* ========== /VARIABLES ========== */
+
+/* ========== COMMON STYLES ========== */
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+  background-color: var(--first-background-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+/* ========== /COMMON STYLES ========== */
+
+/* ========== LOGO ========== */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+
+.logo-accent-text {
+  color: var(--overlays-shadows-headings-color);
+}
+
+footer .logo-accent-text {
+  color: var(--light-mode-backgrounds-color);
+}
+
+/* ========== /LOGO ========== */
+
+/* ========== HEADER ========== */
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--overlays-shadows-headings-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pressed-state-color);
+}
+
+.header-contacts {
+  font-style: normal;
+}
+
+.contacts-link {
+  line-height: 1.5;
+  color: var(--body-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--pressed-state-color);
+}
+
+/* ========== /HEADER ========== */
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+  background-color: var(--overlays-shadows-headings-color);
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--first-background-color);
+}
+
+.hero-btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  border-color: transparent;
+  background: var(--primary-brand-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--first-background-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--pressed-state-color);
+}
+/* ========== /HERO SECTION ========== */
+
+/* ========== SECTION TEXT ========== */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--overlays-shadows-headings-color);
+}
+
+.item-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--overlays-shadows-headings-color);
+}
+
+.item-text {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+}
+
+/* ========== /SECTION TEXT ========== */
+
+/* ========== TEAM SECTION ========== */
+.team-section {
+  background-color: var(--light-mode-backgrounds-color);
+}
+
+.team-list-item {
+  background-color: var(--first-background-color);
+}
+/* ========== /TEAM SECTION ========== */
+
+/* ========== PORTFOLIO SECTION ========== */
+.portfolio-filters-btn {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: var(--light-mode-backgrounds-color);
+  color: var(--primary-brand-color);
+}
+.portfolio-filters-btn:hover,
+.portfolio-filters-btn:focus {
+  background: var(--pressed-state-color);
+  color: var(--first-background-color);
+}
+/* ========== /PORTFOLIO SECTION ========== */
+
+/* ========== FOOTER ========== */
+
+.footer {
+  background-color: var(--overlays-shadows-headings-color);
+}
+
+.footer-text {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--light-mode-backgrounds-color);
+}
+
+/* ========== /FOOTER ========== */
