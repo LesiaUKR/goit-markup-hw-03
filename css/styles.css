@@ -17,16 +17,10 @@
 /* ========== /VARIABLES ========== */
 
 /* ========== COMMON STYLES ========== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   font-family: var(--primary-font);
   font-size: 16px;
-  letter-spacing: 0.02em;
   color: var(--body-text-color);
   background-color: var(--first-background-color);
 }
@@ -112,6 +106,7 @@ footer .logo {
 /* ========== /LOGO ========== */
 
 /* ========== HEADER ========== */
+
 .header {
   border-bottom: 1px solid var(--first-accent-color);
 }
