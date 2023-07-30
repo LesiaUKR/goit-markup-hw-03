@@ -17,6 +17,11 @@
 /* ========== /VARIABLES ========== */
 
 /* ========== COMMON STYLES ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: var(--primary-font);
@@ -28,6 +33,7 @@ body {
 
 button {
   cursor: pointer;
+  color: currentColor;
 }
 
 .link {
@@ -36,6 +42,43 @@ button {
 
 .list {
   list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* ========== /COMMON STYLES ========== */
@@ -64,7 +107,32 @@ footer .logo-accent-text {
 /* ========== /LOGO ========== */
 
 /* ========== HEADER ========== */
+.header {
+  border-bottom: 1px solid var(--first-accent-color);
+}
+
+.header-container {
+  display: flex;
+}
+
+header .logo {
+  margin-right: 76px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
+  padding: 24px 0;
+
   font-weight: 500;
   line-height: 1.5;
   color: var(--overlays-shadows-headings-color);
@@ -76,10 +144,19 @@ footer .logo-accent-text {
 }
 
 .header-contacts {
+  margin-left: auto;
   font-style: normal;
 }
 
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
 .contacts-link {
+  display: inline-block;
+  padding: 24px 0;
+
   line-height: 1.5;
   color: var(--body-text-color);
 }
@@ -92,6 +169,7 @@ footer .logo-accent-text {
 /* ========== /HEADER ========== */
 
 /* ========== HERO SECTION ========== */
+
 .hero-section {
   background-color: var(--overlays-shadows-headings-color);
 }
@@ -119,9 +197,11 @@ footer .logo-accent-text {
 .hero-btn:focus {
   background-color: var(--pressed-state-color);
 }
+
 /* ========== /HERO SECTION ========== */
 
 /* ========== SECTION TEXT ========== */
+
 .section-title {
   text-align: center;
   font-size: 36px;
@@ -150,6 +230,7 @@ footer .logo-accent-text {
 /* ========== /SECTION TEXT ========== */
 
 /* ========== TEAM SECTION ========== */
+
 .team-section {
   background-color: var(--light-mode-backgrounds-color);
 }
@@ -157,12 +238,14 @@ footer .logo-accent-text {
 .team-list-item {
   background-color: var(--first-background-color);
 }
+
 /* ========== /TEAM SECTION ========== */
 
 /* ========== PORTFOLIO SECTION ========== */
+
 .portfolio-filters-btn {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -171,11 +254,13 @@ footer .logo-accent-text {
   background: var(--light-mode-backgrounds-color);
   color: var(--primary-brand-color);
 }
+
 .portfolio-filters-btn:hover,
 .portfolio-filters-btn:focus {
   background: var(--pressed-state-color);
   color: var(--first-background-color);
 }
+
 /* ========== /PORTFOLIO SECTION ========== */
 
 /* ========== FOOTER ========== */
