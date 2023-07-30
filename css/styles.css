@@ -173,7 +173,7 @@ header .logo {
 .hero-section {
   background-color: var(--overlays-shadows-headings-color);
   padding: 188px 0;
-    align-content: center;
+  align-content: center;
 }
 
 .hero-title {
@@ -230,7 +230,6 @@ header .logo {
 
 .item-title {
   margin-bottom: 8px;
-  text-align: center;
 
   font-size: 20px;
   font-style: normal;
@@ -241,7 +240,6 @@ header .logo {
 }
 
 .item-text {
-  text-align: center;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -275,7 +273,6 @@ header .logo {
 }
 
 .production-list-item {
-
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
@@ -289,12 +286,12 @@ header .logo {
 }
 
 .team-list {
-display: flex;
-gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
-  flex-basis: calc((100%-3*24px)/4);
+  flex-basis: calc((100%-3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--first-background-color);
 }
@@ -302,12 +299,36 @@ gap: 24px;
 .team-description-wrap {
   padding: 32px 0;
 }
+
+.team-section .item-title {
+  text-align: center;
+}
+
+.team-section .item-text {
+  text-align: center;
+}
+
 /* ========== /TEAM SECTION ========== */
 
 /* ========== PORTFOLIO SECTION ========== */
 
+.portfolio-section {
+  padding-top: 96px;
+}
+
+.portfolio-filters-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
 .portfolio-filters-btn {
+  padding: 12px 24px;
   text-align: center;
+  border-radius: 4px;
+  border: 1px solid var(--first-accent-color);
+
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -320,10 +341,26 @@ gap: 24px;
 
 .portfolio-filters-btn:hover,
 .portfolio-filters-btn:focus {
+  border: 1px solid transparent;
   background: var(--pressed-state-color);
   color: var(--first-background-color);
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 
+.portfolio-list-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-description-wrap {
+  padding: 32px 16px;
+  border: 1px solid var(--first-accent-color);
+  border-top: none;
+}
 /* ========== /PORTFOLIO SECTION ========== */
 
 /* ========== FOOTER ========== */
